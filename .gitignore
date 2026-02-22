@@ -1,0 +1,15 @@
+# Ignorar configuraciones locales de VSCode
+.vscode/
+
+# Qt / CMake / Build
+.cmake/
+.qt/
+.qtc/
+build/
+CMakeFiles/
+CMakeCache.txt
+*.user
+*.qtc
+*.ninja
+*.o
+*.obj
