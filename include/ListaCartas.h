@@ -1,8 +1,8 @@
 #pragma once
-/**
- lista enlazada simple para la mano de un jugador
- implementada con punteros y new o delete
- */
+
+ //ista enlazada simple para la mano de un jugador
+ //implementada con punteros y new o delete
+ 
 #include "Carta.h"
 
 class ListaCartas {

@@ -8,14 +8,14 @@
 enum class ColorCarta {
 
     
-    ROJO, VERDE, AZUL, AMARILLO, // lado claro
-    ROSA, TURQUESA, NARANJA, VIOLETA, // lado oscuro uno flip
-    // cartas especiales
-    NEGRO,   // comodín normal
-    NINGUNO  // sin color asignado aún
+    ROJO, VERDE, AZUL, AMARILLO, 
+    ROSA, TURQUESA, NARANJA, VIOLETA, 
+    
+    NEGRO,   
+    NINGUNO  
 };
 
-// tipos de carta
+
 enum class TipoCarta {
     NUMERO,
     ACCION,     // +2, +4, saltar, reversa
@@ -25,28 +25,28 @@ enum class TipoCarta {
     PERSONALIZADA_ESCUDO        // carta "" 2
 };
 
-// lado del mazo uno flip
+
 enum class LadoMazo { CLARO, OSCURO };
 
-// acciones de carta
+
 enum class AccionCarta {
     NINGUNA,
-    MAS_UNO,     // +1 en flip claro
-    MAS_DOS,     // +2
-    MAS_TRES,    // +3 en flip oscuro
-    MAS_CUATRO,  // +4
-    MAS_SEIS,    // +6 flip oscuro
-    SKIP,        // saltar siguiente
-    SKIP_TODOS,  // saltar todos flip oscuro, vuelve al lanzador
-    REVERSE,     // invertir dirección
+    MAS_UNO,     
+    MAS_DOS,     
+    MAS_TRES,    
+    MAS_CUATRO,  
+    MAS_SEIS,    
+    SKIP,        
+    SKIP_TODOS,  
+    REVERSE,     
     CAMBIAR_COLOR,
-    FLIP_MAZO,   // voltear mazo claro oscuro
-    COLOR_ETERNO,// comodín oscuro: siguiente roba hasta hallar color
-    ROBA_COLOR,  // carta personalizada
-    ESCUDO       // carta personalizada
+    FLIP_MAZO,   
+    COLOR_ETERNO,
+    ROBA_COLOR,  
+    ESCUDO       
 };
 
-// Utilidades
+
 inline std::string colorNombre(ColorCarta c) {
     switch (c) {
          case ColorCarta::ROJO:     return "Rojo";

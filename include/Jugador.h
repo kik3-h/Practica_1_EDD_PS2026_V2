@@ -1,7 +1,7 @@
 #pragma once
-/**
- Clase Jugador con su mano de cartas
- */
+
+ //Clase Jugador con su mano de cartas
+
 #include "ListaCartas.h"
 #include <string>
 
@@ -9,11 +9,11 @@ class Jugador {
 private:
     std::string  nombre_;
     ListaCartas* mano_;
-    bool         gritoUNO_;    // true si ya gritó UNO
-    bool         tieneEscudo_; // carta personalizada activa
+    bool         gritoUNO_;    
+    bool         tieneEscudo_; 
     bool         eliminado_;
 
-    // metodo que hace
+    
 public:
     explicit Jugador(const std::string& nombre);
     ~Jugador();

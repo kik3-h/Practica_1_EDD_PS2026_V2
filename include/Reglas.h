@@ -1,8 +1,6 @@
 #pragma once
-/**
-  Flags configurables de las reglas del juego UNO
-  Serializable a archivo de texto
- */
+//Flags configurables de las reglas del juego UNO
+  //Serializable a archivo de texto
 #include <string>
 #include <fstream>
 #include <iostream>
@@ -15,10 +13,8 @@ struct Reglas {
     bool ganarConNegra   = false; // Puede ganar con carta negra
     bool unoFlipActivado = false; // Activa la expansión UNO Flip
 
-    //muestra las reglas actuales en consola
     void mostrar() const;
 
-    //Serializa a archivo de texto simple
     bool guardar(const std::string& ruta) const {
         std::ofstream f(ruta);
         if (!f) return false;
@@ -31,7 +27,6 @@ struct Reglas {
         return true;
     }
 
-    // Carga desde archivo de texto
     bool cargar(const std::string& ruta) {
         std::ifstream f(ruta);
         if (!f) return false;
