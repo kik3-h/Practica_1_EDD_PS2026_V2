@@ -12,7 +12,7 @@ protected:
     ColorCarta  color_;
     TipoCarta   tipo_;
     AccionCarta accion_;
-    LadoMazo    lado_;   // claro u oscuro uno flip
+    LadoMazo    lado_;   
 
 public:
     Carta(ColorCarta color, TipoCarta tipo,
@@ -21,7 +21,7 @@ public:
 
      virtual ~Carta() = default;
 
-    //metodos virtuales puros que cada tipo de carta implementará según su lógica específica
+    
     virtual void dibujar()                              const = 0;
     virtual bool esJugable(const Carta* cartaCima)      const = 0;
     virtual void aplicarEfecto(EstadoJuego& estado)     const = 0;
@@ -32,6 +32,6 @@ public:
     AccionCarta getAccion() const { return accion_; }
     LadoMazo    getLado()   const { return lado_; }
 
-    // Setter para comodin elige color al jugarse
+    
      void setColor(ColorCarta c) { color_ = c; }
 };
