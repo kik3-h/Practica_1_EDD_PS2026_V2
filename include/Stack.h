@@ -2,6 +2,7 @@
 
 // implementacion propia de Pila (Stack asi en inglich) con punteros dinamicos
 // TAD Stack<T>
+//hice mucho comentario pq se que aca me van a chiquitiar
 
 #include <stdexcept>
 

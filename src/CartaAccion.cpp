@@ -67,9 +67,9 @@ std::string CartaAccion::getEtiqueta() const {
         case AccionCarta::MAS_DOS:    return "+2";
         case AccionCarta::MAS_UNO:    return "+1";
         case AccionCarta::MAS_TRES:   return "+3";
-        case AccionCarta::SKIP:       return "SKP";
-        case AccionCarta::SKIP_TODOS: return "SKP!";
-        case AccionCarta::REVERSE:    return "REV";
+        case AccionCarta::SKIP:       return "Skip";
+        case AccionCarta::SKIP_TODOS: return "SkipAll";
+        case AccionCarta::REVERSE:    return "REVER";
         default:                      return "?";
     }
 }
