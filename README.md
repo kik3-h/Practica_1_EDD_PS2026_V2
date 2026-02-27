@@ -9,7 +9,7 @@ Practica 1 estructura de datos del primer semestre 2026 version 2 (en consola)
 debido a problemas en qt decidi cambiarme a hacerlo en consola
 
 Proyecto de la Primera Práctica de Estructura de Datos.
-
+Obtuve de calificacion 78%
 by: Instagram: kik3.h
 
 ## Requisitos
